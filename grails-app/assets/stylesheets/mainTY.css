@@ -1,0 +1,365 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16 px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.6rem;
+}
+
+.login-body {
+    min-width: 390px !important;
+}
+.principal-body {
+    min-width: 1080px !important;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+h1 {
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+ul {
+    padding: 0;
+}
+.btn-body {
+    color: rgb(228, 53, 53);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgb(228, 53, 53);
+    padding: 0 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.btn-body:hover {
+    cursor: pointer;
+    background-color: rgba(228, 53, 53, 0.89);
+    color: #ffffff;
+}
+
+/* Utilidades */
+.contenedor {
+    max-width: 1920px;
+    margin: 0 auto; 
+    padding: 0 8rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/* Index */
+.barra {
+    background-color: #3a3a3a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contenido-barra {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-contenedor .logo {
+    font-family: 'Istok Web', sans-serif;
+    color: rgb(228, 53, 53);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 4.2rem;
+}
+.logo-contenedor a span,
+.informatica p {
+    display: none;
+    font-family: 'Audiowide', cursive;
+    color: #9b9b9b;
+    font-size: 3.4rem;
+}
+.logo-contenedor a span {
+display: inline-block;
+}   
+.informatica p {
+    text-transform: uppercase;
+    padding-top: .8rem;
+    margin-right: 7rem;
+    display: inline-block;
+} 
+.fondo-login {
+    background-image: url(../images/images/Hiace1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 68px);
+    position: relative;
+    padding: 0 2rem;
+}
+.formulario-login {
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    width: 360px;
+    height: 380px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 360px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+}
+.fondo-login h3 {
+    font-size: 3.8rem;
+    margin-bottom: 3rem;
+}
+.mensaje-error {
+    color: red;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+.formulario-login .campo {
+    width: auto;
+    max-width: 240px;
+    margin: 0 auto;
+}
+.fondo-login .campo input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #979696;
+    margin-bottom: 1.4rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+.fondo-login .campo input:focus {
+    outline: none;
+    border: 1px solid rgb(228, 53, 53);
+}
+.fondo-login .button {
+    background-color: rgb(228, 53, 53);
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgb(228, 53, 53);
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+.fondo-login .button:hover {
+    cursor: pointer;
+    background-color: rgba(228, 53, 53, 0.89);
+}
+.fondo-login p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #979696;
+}
+
+/* User */
+.user-barra {
+    background-color: #3a3a3a;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.content h1 {
+    margin: 1rem;
+    font-size: 3.2rem;
+}
+
+/* Pagina Principal */
+
+/* Navegacion */
+nav {
+    border-bottom: 1px solid #cccccc;
+}
+nav .enlaces {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    position: relative;
+}
+nav .enlaces li {
+   flex: 0 0 calc(100% / 6); 
+   text-align: center;
+   display: block;
+   position: relative;
+}
+nav .enlaces li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 1rem 0;
+}
+nav .enlaces li:hover {
+    background-color: #dddbdb;
+}
+nav .enlaces a:hover {
+    background-color: #d3d0d0;
+}
+nav .enlaces #sesion a {
+    color: rgb(228, 53, 53);
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* Menu Desplegable */
+nav ul ul {
+    position: absolute;
+    background-color: #dddbdb;
+    display: none;
+    width: 100%;
+}
+nav ul li:hover>ul {
+    display: block;
+}
+
+
+/* Toner */
+main.tabla {
+    margin: 0 auto;
+    padding-top: 2rem;
+    max-width: 1920px;
+}
+main.tabla .contenedor-tabla {
+    margin: 4rem 0;
+}
+main .fila {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main .contenedor-tabla .fila .encabezado {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(228, 53, 53);
+}
+main .contenedor-tabla .fila li.operacion,
+main .contenido-tabla .fila li.operacion {
+    flex-basis: 100px;
+}
+main .contenido-tabla {
+    margin-top: 2rem;
+}
+main .atencion {
+    color: rgb(228, 53, 53);
+}
+main .contenido-tabla .fila li {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main .contenido-tabla .fila li .btn-atencion {
+    background-color: rgb(228, 53, 53);
+    color: #ffffff;
+}
+main .contenido-tabla .fila li .btn-atencion:hover {
+    cursor: pointer;
+    background-color: rgba(228, 53, 53, 0.89);
+    color: #ffffff;
+}
+
+
+/* Modelos */
+main.modelo {
+    padding-top: 2rem;
+    max-width: 1400px !important; 
+}
+main .contenedor-impresora {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #cccccc;
+    margin: 4rem 14rem;
+}
+main .contenedor-impresora .lado-izq {
+    flex: 1 0 50%;
+}
+main .contenedor-impresora .lado-der {
+    flex: 1 0 30%;
+}
+main .contenedor-impresora .lado-izq img {
+    width: 350px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+main .contenedor-impresora .lado-der .infoimp {
+    margin-top: 4rem; 
+}
+main .contenedor-impresora .lado-der .infoimp li {
+    list-style: none;
+    margin-bottom: 1.4rem;
+}
+
+/* Formulario Alta */
+main .form-tu {
+    margin-top: 3rem;
+}
+main .form-tu form {
+    display: flex;
+    justify-content: center;
+}
+main .form-tu form fieldset {
+    padding: 3rem 10rem;
+    border-radius: 20px;
+    border: 1px solid #3a3a3a;
+    margin-bottom: 4rem;
+}
+main .form-tu .campo {
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+main .form-tu .campo label {
+    width: 80px;
+}
+main .form-tu .campo input,
+main .form-tu .campo select {
+    width: 240px;
+    height: 30px;
+}
+main .form-tu form .btn {
+    float: right;
+    margin-top: 1rem;
+    background-color: rgb(228, 53, 53);
+    border-style: none;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    border-radius: 20px;
+}
+main .form-tu form .btn:hover {
+    cursor: pointer;
+    background-color: rgba(228, 53, 53, 0.89);
+}
+
+/* Media Query*/
+
+@media only screen and (max-width: 1080px) {
+    .login-body .logo-contenedor {
+        margin: 0 auto;
+    }
+    .login-body .informatica {
+        display: none;
+    }
+    .login-body .formulario-login {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .login-body .logo-contenedor .logo span {
+        display: none;
+    }
+}
